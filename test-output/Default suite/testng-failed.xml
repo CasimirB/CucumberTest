@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="stepDefinitionPackage.StepDefinition">
+      <class name="runnerPackage.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario"/>
           <include name="setUp"/>
           <include name="tearDownClass"/>
+          <include name="shutDown"/>
         </methods>
-      </class> <!-- stepDefinitionPackage.StepDefinition -->
+      </class> <!-- runnerPackage.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
