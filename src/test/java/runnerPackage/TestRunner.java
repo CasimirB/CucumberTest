@@ -16,6 +16,7 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
+		System.out.println("Setup begins.");
 	}
 	@AfterTest
 	public void shutDown() {
